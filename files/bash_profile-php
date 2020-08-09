@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# Set up aliases for the common commands
+alias dphp="docker run --rm --interactive --tty \
+  --volume $PWD:/app \
+  --user $(id -u):$(id -g) \
+  php:cli-alpine"
+alias dcmpr="docker run --rm --interactive --tty \
+  --volume $PWD:/app \
+  --volume $SSH_AUTH_SOCK:/ssh-auth.sock \
+  --volume /etc/passwd:/etc/passwd:ro \
+  --volume /etc/group:/etc/group:ro \
+  --env SSH_AUTH_SOCK=/ssh-auth.sock \
+  --user $(id -u):$(id -g) \
+  composer"
