@@ -3,10 +3,12 @@
 # Set up aliases for the common commands
 alias dphp="docker run --rm --interactive --tty \
   --volume \$PWD:/app \
+  -w=/app \
   --user $(id -u):$(id -g) \
   php:cli-alpine"
 alias dcmpr="docker run --rm --interactive --tty \
   --volume \$PWD:/app \
+  -w=/app \
   --volume $SSH_AUTH_SOCK:/ssh-auth.sock \
   --volume /etc/passwd:/etc/passwd:ro \
   --volume /etc/group:/etc/group:ro \
