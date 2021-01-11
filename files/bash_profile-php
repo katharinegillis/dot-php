@@ -6,6 +6,11 @@ alias dphp="docker run --rm --interactive --tty \
   -w=/app \
   --user $(id -u):$(id -g) \
   php:cli-alpine"
+alias dphp74="docker run --rm --interactive --tty \
+  --volume \$PWD:/app \
+  -w=/app \
+  --user $(id -u):$(id -g) \
+  php:7.4-cli-alpine"
 alias dcmpr="docker run --rm --interactive --tty \
   --volume \$PWD:/app \
   -w=/app \
@@ -18,3 +23,4 @@ alias dcmpr="docker run --rm --interactive --tty \
 
 alias php="dphp"
 alias composer="dcmpr"
+alias php74="dphp74"
