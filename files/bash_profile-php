@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 
 # Set up aliases for the common commands
-alias dphp="docker run --rm --interactive --tty \
+alias php="docker run --rm --interactive --tty \
   --volume \$PWD:/app \
   -w=/app \
   --user $(id -u):$(id -g) \
   php:cli-alpine"
-alias dphp74="docker run --rm --interactive --tty \
+alias php74="docker run --rm --interactive --tty \
   --volume \$PWD:/app \
   -w=/app \
   --user $(id -u):$(id -g) \
   php:7.4-cli-alpine"
-alias dcmpr="docker run --rm --interactive --tty \
+alias cmpr="docker run --rm --interactive --tty \
   --volume \$PWD:/app \
   -w=/app \
   --volume $SSH_AUTH_SOCK:/ssh-auth.sock \
@@ -20,7 +20,3 @@ alias dcmpr="docker run --rm --interactive --tty \
   --env SSH_AUTH_SOCK=/ssh-auth.sock \
   --user $(id -u):$(id -g) \
   composer"
-
-alias php="dphp"
-alias composer="dcmpr"
-alias php74="dphp74"
