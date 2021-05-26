@@ -1,5 +1,5 @@
 # katharinegillis/php
-Just a bunch of dotfiles.
+Installs the latest Php, Php 7.4, and Composer as docker containers.
 
 ## Install
 Clone and symlink or install with [ellipsis][ellipsis]:
