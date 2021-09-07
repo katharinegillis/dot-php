@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-# Remove latest and 7.4 php related images
-docker image rm php:cli-alpine
-docker image rm php:7.4-cli-alpine
-docker image rm composer
+# Uninstall php using apt
+sudo apt remove php8.0 -y
+
+# Uninstall composer
+sudo rm /usr/local/bin/composer

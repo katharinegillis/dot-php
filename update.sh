@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-# Pull latest and 7.4 php related images
-docker pull php:cli-alpine
-docker pull php:7.4-cli-alpine
-docker pull composer
+# Update php using apt
+sudo apt install php8.0 -y
+
+# Update composer using its self-update
+composer self-update
