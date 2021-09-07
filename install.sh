@@ -5,7 +5,7 @@ sudo apt install software-properties-common
 sudo add-apt-repository ppa:ondrej/php -y
 
 # Install php
-sudo apt install php8.0 -y
+sudo apt install php8.0 php8.0-curl -y
 
 # Install composer
 curl -sS https://getcomposer.org/installer -o composer-setup.php
