@@ -7,5 +7,5 @@ if [ "$SYSTEM" != "mac" ]; then
     sudo apt install php8.0 php8.0-curl -y
 
     # Update composer using its self-update
-    composer self-update
+    sudo composer self-update
 fi
