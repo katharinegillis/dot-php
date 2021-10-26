@@ -23,7 +23,4 @@ if [ "$SYSTEM" != "mac" ]; then
     fi
 
     rm -rf composer-setup.php
-
-    # Install global composer packages
-    composer global require squizlabs/php_codesniffer escapestudios/symfony2-coding-standard
 fi

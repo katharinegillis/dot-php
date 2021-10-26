@@ -8,7 +8,4 @@ if [ "$SYSTEM" != "mac" ]; then
 
     # Update composer using its self-update
     sudo composer self-update
-
-    # Update global composer packages
-    composer global update squizlabs/php_codesniffer escapestudios/symfony2-coding-standard
 fi
