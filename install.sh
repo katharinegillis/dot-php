@@ -8,7 +8,7 @@ if [ "$SYSTEM" != "mac" ]; then
     sudo add-apt-repository ppa:ondrej/php -y
 
     # Install php
-    sudo apt install php8.0 php8.0-curl -y
+    sudo apt install php8.0 php8.0-curl php8.0-xml -y
 
     # Install composer
     curl -sS https://getcomposer.org/installer -o composer-setup.php
