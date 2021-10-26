@@ -1,0 +1,1 @@
+export PATH=$(composer -n config --global bin-dir --absolute):$PATH
