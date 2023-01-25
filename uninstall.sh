@@ -1,5 +1,3 @@
 #!/usr/bin/env bash
 
-# Remove latest php related images
-docker image rm php:cli-alpine
-docker image rm composer
+sudo apt remove php8.2-cli php8.2-mbstring php8.2-dev -y
